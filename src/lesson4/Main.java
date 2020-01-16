@@ -6,30 +6,43 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        MyLinkedList<String> mll = new MyLinkedList<>();
-        mll.insertFirst("Katia");
-        mll.insertFirst("Maria");
-        mll.insertFirst("Luba");
-        mll.insertFirst("Luba");
-        mll.insertFirst("Luba");
-//        System.out.println(mll.contains("Maria"));
-//        System.out.println(mll.indexOf("Luba"));
+//        MyLinkedList<String> mll = new MyLinkedList<>();
+//        mll.insertFirst("Katia");
+//        mll.insertFirst("Maria");
+//        mll.insertFirst("Luba");
+//        mll.insertFirst("Luba");
+//        mll.insertFirst("Luba");
+////        System.out.println(mll.contains("Maria"));
+////        System.out.println(mll.indexOf("Luba"));
+////        System.out.println(mll);
+////        mll.insert(1,"Petia");
+//
 //        System.out.println(mll);
-//        mll.insert(1,"Petia");
+//        mll.insertLast("Sania");
+//        System.out.println(mll);
+//
+//        mll.insert(3, "Petia");
+//        System.out.println(mll);
+//
+//        mll.remove("Luba");
+//        System.out.println(mll);
+//
+//        for (String s : mll) {
+//            System.out.print(s + " ");
+//        }
 
-        System.out.println(mll);
-        mll.insertLast("Sania");
-        System.out.println(mll);
+        MyLinkedQueue<String> mlq = new MyLinkedQueue<>();
 
-        mll.insert(3, "Petia");
-        System.out.println(mll);
+        mlq.enqueue("Tetya");
+        mlq.enqueue("Dadya");
+        mlq.enqueue("Igor");
+        mlq.enqueue("Lena");
 
-        mll.remove("Luba");
-        System.out.println(mll);
-
-        for (String s : mll) {
-            System.out.print(s + " ");
-        }
+        System.out.println(mlq.dequeue());
+        System.out.println(mlq.dequeue());
+        System.out.println(mlq.dequeue());
+        System.out.println(mlq.dequeue());
+ //       System.out.println(mlq.dequeue());
 
 //        Iterator<String> iterator = mll.iterator();
 //        while(iterator.hasNext()){
