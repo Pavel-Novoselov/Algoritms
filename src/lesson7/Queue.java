@@ -1,14 +1,13 @@
-package graf;
+package lesson7;
 
 import java.util.LinkedList;
 
 public class Queue {
-    private int maxSize;
     private LinkedList<Integer> list;
 
 
-    public Queue(int size){
-        this.maxSize = size;
+    public Queue(){
+
         this.list = new LinkedList<>();
 
     }

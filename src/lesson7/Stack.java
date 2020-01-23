@@ -1,4 +1,4 @@
-package graf;
+package lesson7;
 
 class Stack{
     private int maxSize;

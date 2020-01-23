@@ -1,11 +1,16 @@
-package graf;
+package lesson7;
 
-public class Vertex{
-    public char label;
+import com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator;
 
+public class Vertex<T>{
+ //   public char label;
+    public T label;
     public boolean wasVisited;
 
-    public Vertex(char label) {
+    public Vertex() {
+    }
+
+    public Vertex(T label) {
         this.label = label;
         this.wasVisited = false;
     }
